@@ -1,1 +1,0 @@
-// ts file outside the ./src folder
