@@ -8,16 +8,15 @@
 //   console.log('hello, again');
 // }
 
-const add = (a: number, b: number, c/*?*/: number | string = 10): void => {
+const add = (a: number, b: number, c: number | string = 50): void => {
   console.log(a + b);
   console.log(c);
-}
-
-add(5, 10, 'ninja');
+};
+add(5, 10, "난 세 번째 인자");
 
 const minus = (a: number, b: number): number => {
   return a + b;
-}
+};
 
-let result = minus(10,7);
-console.log(result);
+let result = minus(10, 7);
+//console.log(result);
