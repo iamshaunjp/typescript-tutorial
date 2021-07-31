@@ -16,7 +16,7 @@ const add = (a: number, b: number, c/*?*/: number | string = 10): void => {
 add(5, 10, 'ninja');
 
 const minus = (a: number, b: number): number => {
-  return a + b;
+  return a - b;
 }
 
 let result = minus(10,7);
