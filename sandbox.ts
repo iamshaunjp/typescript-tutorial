@@ -1,36 +1,33 @@
-let character: string = 'mario';
-let age: number;
-let isLoggedIn: boolean;
+// explicit types --> 
+let character: string // initialize this variable and don't give any value, but in future only allow string in character variable.
+let age: number
+let isLoggedIn: boolean
+age = 45
+isLoggedIn = false
 
-// age = 'luigi';
-age = 30;
+// arrays -->
+let ninjas: string[] = []
+ninjas.push('john')
 
-// isLoggedIn = 25;
-isLoggedIn = true;
+// union type -->
+let mixed: (string|number|boolean)[] = []
+mixed.push('hello') 
+mixed.push(6)
+mixed.push(false)
+console.log(mixed)
 
-// arrays
-let ninjas: string[] = [];
+let uid: string|number
+uid = '123'
+uid = 123
 
-ninjas.push('ryu');
-ninjas.push('chun-li');
-console.log(ninjas);
-
-// union types
-let mixed: (string|number|boolean)[] = [];
-mixed.push('hello');
-mixed.push(false);
-mixed.push(20);
-console.log(mixed);
-
-let uid: string|number;
-
-// objects
-let ninjaOne: object;
-ninjaOne = { name: 'yoshi', age: 30 };
+// objects -->
+let ninjaOne: object
+ninjaOne = { name: 'tom', age: 19}
+ninjaOne = [] // as arrays are also objects
 
 let ninjaTwo: {
-  name: string,
+  name: string, 
   age: number,
-  beltColour: string
-};
-ninjaTwo = { name: 'ken', age: 20, beltColour: 'black' };
+  isLoggedIn: boolean,
+}
+ninjaTwo = { name: 'mohan', age: 19, isLoggedIn: false} 

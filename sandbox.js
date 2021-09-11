@@ -1,24 +1,24 @@
-var character = 'mario';
+// explicit types --> 
+var character; // initialize this variable and don't give any value, but in future only allow string in character variable.
 var age;
 var isLoggedIn;
-// age = 'luigi';
-age = 30;
-// isLoggedIn = 25;
-isLoggedIn = true;
-// arrays
+age = 45;
+isLoggedIn = false;
+// arrays -->
 var ninjas = [];
-ninjas.push('ryu');
-ninjas.push('chun-li');
-console.log(ninjas);
-// union types
+ninjas.push('john');
+// union type -->
 var mixed = [];
 mixed.push('hello');
+mixed.push(6);
 mixed.push(false);
-mixed.push(20);
 console.log(mixed);
 var uid;
-// objects
+uid = '123';
+uid = 123;
+// objects -->
 var ninjaOne;
-ninjaOne = { name: 'yoshi', age: 30 };
+ninjaOne = { name: 'tom', age: 19 };
+ninjaOne = []; // as arrays are also objects
 var ninjaTwo;
-ninjaTwo = { name: 'ken', age: 20, beltColour: 'black' };
+ninjaTwo = { name: 'mohan', age: 19, isLoggedIn: false };
